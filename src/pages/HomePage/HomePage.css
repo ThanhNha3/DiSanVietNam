@@ -1,0 +1,62 @@
+#backgroundImage::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: black;
+    opacity: 0.5;
+}
+.image-hover {
+    width: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.image-hover img {
+    height: 200px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.image-hover:hover img {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.image-hover .sub-image{
+}
+
+.tab {
+    position: relative;
+}
+
+.tab.active::after {
+    content: "";
+    position: absolute;
+    transition: 2s;
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+    animation: change ease .5s;
+}
+
+#myDiv {
+    animation: fadeIn ease 3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes change {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}

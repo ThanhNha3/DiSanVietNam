@@ -1,0 +1,28 @@
+.list-tab > li:hover {
+    cursor: pointer;
+}
+
+.list-tab {
+    display: flex;
+}
+
+#menuIcon {
+    display: none;
+}
+@media screen and (max-width: 1024px) {
+    .header {
+        padding: 0 20px;
+    }
+    .list-tab {
+        position: absolute;
+        flex-direction: column;
+        top: 100%;
+        width: max-content;
+        right: 0%;
+        border: white solid 1px;
+        padding: 10px 10px;
+    }
+    #menuIcon {
+        display: block;
+    }
+}
